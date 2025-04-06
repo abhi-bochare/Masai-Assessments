@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Apartments</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+        }
+        .apt-card{
+            border: 1px solid rgb(72, 70, 70);
+            margin: 5px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apartment Finder</h1>
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search Apartment Here">
+        <label>Bedrooms: </label>
+        <select id="bedroomFilter">
+            <option value="all">All</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <label><input type="checkbox" id="availableOnly"/>Available Only</label>
+        <button id="apply-btn">Apply</button>
+    </div>
+    <div id="container"></div>
+
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
